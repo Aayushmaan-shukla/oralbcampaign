@@ -652,7 +652,7 @@ def extract_flipkart_price_and_stock(driver, url, offers_found=False):
         }
 
 class ComprehensiveFlipkartExtractor:
-    """Extract ALL Flipkart store links from comprehensive JSON structure"""
+    """Extract ALL Flipkart store links from Oral B iO3 JSON structure"""
     
     def __init__(self, input_file: str, flipkart_urls_file: str = None):
         self.input_file = input_file
@@ -674,10 +674,8 @@ class ComprehensiveFlipkartExtractor:
     
     def find_all_flipkart_store_links(self, data: Any, path: str = "") -> List[Dict]:
         """
-        COMPREHENSIVE search for ALL Flipkart store links in ALL nested locations
-        - scraped_data.variants
-        - scraped_data.all_matching_products  
-        - scraped_data.unmapped
+        Search for ALL Flipkart store links in the Oral B iO3 JSON structure
+        - data.variants[].store_links[]
         """
         flipkart_links = []
         
@@ -708,57 +706,46 @@ class ComprehensiveFlipkartExtractor:
                             'store_idx': store_idx
                         })
         
-        def search_recursive(obj: Any, current_path: str = ""):
-            if isinstance(obj, dict):
-                # CRITICAL: Only process entries that are NOT Amazon or Croma
-                if 'scraped_data' in obj:
-                    scraped_data = obj['scraped_data']
-                    if isinstance(scraped_data, dict):
-                        
-                        # 1. Search in variants (original location)
-                        if 'variants' in scraped_data and isinstance(scraped_data['variants'], list):
-                            for variant_idx, variant in enumerate(scraped_data['variants']):
-                                if isinstance(variant, dict) and 'store_links' in variant:
-                                    variant_path = f"{current_path}.scraped_data.variants[{variant_idx}]"
-                                    extract_flipkart_from_store_links(
-                                        variant['store_links'], 
-                                        variant_path, 
-                                        variant
-                                    )
-                        
-                        # 2. Search in all_matching_products (MISSING in original script)
-                        if 'all_matching_products' in scraped_data and isinstance(scraped_data['all_matching_products'], list):
-                            for amp_idx, amp_item in enumerate(scraped_data['all_matching_products']):
-                                if isinstance(amp_item, dict) and 'store_links' in amp_item:
-                                    amp_path = f"{current_path}.scraped_data.all_matching_products[{amp_idx}]"
-                                    extract_flipkart_from_store_links(
-                                        amp_item['store_links'], 
-                                        amp_path, 
-                                        amp_item
-                                    )
-                        
-                        # 3. Search in unmapped (MISSING in original script)
-                        if 'unmapped' in scraped_data and isinstance(scraped_data['unmapped'], list):
-                            for unmapped_idx, unmapped_item in enumerate(scraped_data['unmapped']):
-                                if isinstance(unmapped_item, dict) and 'store_links' in unmapped_item:
-                                    unmapped_path = f"{current_path}.scraped_data.unmapped[{unmapped_idx}]"
-                                    extract_flipkart_from_store_links(
-                                        unmapped_item['store_links'], 
-                                        unmapped_path, 
-                                        unmapped_item
-                                    )
+        # Search in the new JSON structure
+        if isinstance(data, dict):
+            # Check if this is the Oral B iO3 structure
+            if 'toothbrush_name' in data and 'variants' in data:
+                print(f"📱 Processing Oral B iO3 structure: {data.get('toothbrush_name', 'Unknown')}")
                 
-                # Continue recursive search
-                for key, value in obj.items():
-                    new_path = f"{current_path}.{key}" if current_path else key
-                    search_recursive(value, new_path)
-                    
-            elif isinstance(obj, list):
-                for i, item in enumerate(obj):
-                    new_path = f"{current_path}[{i}]" if current_path else f"[{i}]"
-                    search_recursive(item, new_path)
+                # Search in variants
+                if 'variants' in data and isinstance(data['variants'], list):
+                    for variant_idx, variant in enumerate(data['variants']):
+                        if isinstance(variant, dict) and 'store_links' in variant:
+                            variant_path = f"variants[{variant_idx}]"
+                            extract_flipkart_from_store_links(
+                                variant['store_links'], 
+                                variant_path, 
+                                variant
+                            )
+            else:
+                # Fallback to recursive search for other structures
+                def search_recursive(obj: Any, current_path: str = ""):
+                    if isinstance(obj, dict):
+                        # Check for store_links in any dict
+                        if 'store_links' in obj and isinstance(obj['store_links'], list):
+                            extract_flipkart_from_store_links(
+                                obj['store_links'], 
+                                current_path, 
+                                obj
+                            )
+                        
+                        # Continue recursive search
+                        for key, value in obj.items():
+                            new_path = f"{current_path}.{key}" if current_path else key
+                            search_recursive(value, new_path)
+                            
+                    elif isinstance(obj, list):
+                        for i, item in enumerate(obj):
+                            new_path = f"{current_path}[{i}]" if current_path else f"[{i}]"
+                            search_recursive(item, new_path)
+                
+                search_recursive(data, path)
         
-        search_recursive(data, path)
         return flipkart_links
 
 @dataclass
@@ -1387,14 +1374,13 @@ def create_chrome_driver():
         logging.error(f"Failed to create Chrome driver: {e}")
         raise
 
-def process_comprehensive_flipkart_links(input_file="comprehensive_amazon_offers.json", 
-                                       output_file="comprehensive_amazon_offers.json",
+def process_comprehensive_flipkart_links(input_file="Oral B iO3.json", 
+                                       output_file=None,
                                        flipkart_urls_file="visited_urls_flipkart.txt"):
     """
-    Process Flipkart store links in the comprehensive JSON file with smart processing
-    - Completely isolates Amazon and Croma offers (no changes)
+    Process Flipkart store links in the Oral B iO3 JSON file with smart processing
+    - Processes Flipkart URLs from variants.store_links
     - Smart processing: Skips URLs with existing offers to preserve data, processes new/empty ones
-    - Traverses ALL nested locations comprehensively
     - Runs in fully automated mode (headless, no user interaction)
     
     NEW FUNCTIONALITY:
@@ -1416,6 +1402,12 @@ def process_comprehensive_flipkart_links(input_file="comprehensive_amazon_offers
     - Smart session recycling for better stability
     - Automatic backup file cleanup to preserve storage
     """
+    
+    # Generate output filename based on input file
+    if output_file is None:
+        base_name = os.path.splitext(os.path.basename(input_file))[0]
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        output_file = f"{base_name}_flipkart_offers_{timestamp}.json"
     
     # Create backup before processing
     backup_file = f"{input_file}.backup_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
@@ -1770,7 +1762,7 @@ scraping_status = {
     'output_file': None
 }
 
-def run_flipkart_scraper_process(input_file="all_data.json", output_file=None, flipkart_urls_file="visited_urls_flipkart.txt"):
+def run_flipkart_scraper_process(input_file="Oral B iO3.json", output_file=None, flipkart_urls_file="visited_urls_flipkart.txt"):
     """
     Function to run the Flipkart scraper process in a separate thread
     """
@@ -1779,8 +1771,9 @@ def run_flipkart_scraper_process(input_file="all_data.json", output_file=None, f
     try:
         # Generate timestamped output filename if not provided
         if output_file is None:
+            base_name = os.path.splitext(os.path.basename(input_file))[0]
             timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-            output_file = f"all_data_flipkart_{timestamp}.json"
+            output_file = f"{base_name}_flipkart_offers_{timestamp}.json"
         
         # Reset status
         scraping_status.update({
@@ -1839,12 +1832,13 @@ def start_scraping():
         # Get parameters from request (if any)
         data = request.get_json() if request.is_json else {}
         
-        input_file = data.get('input_file', 'all_data.json')
+        input_file = data.get('input_file', 'Oral B iO3.json')
         # Generate timestamped output filename if not provided
         output_file = data.get('output_file', None)
         if output_file is None:
+            base_name = os.path.splitext(os.path.basename(input_file))[0]
             timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-            output_file = f"all_data_flipkart_{timestamp}.json"
+            output_file = f"{base_name}_flipkart_offers_{timestamp}.json"
         flipkart_urls_file = data.get('flipkart_urls_file', 'visited_urls_flipkart.txt')
         
         # Start scraping in a separate thread
@@ -1992,14 +1986,12 @@ if __name__ == "__main__":
         # Run as direct script execution (original behavior)
         # Generate timestamped output filename
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-        input_file = "all_data.json"
-        output_file = f"all_data_flipkart_{timestamp}.json"
+        input_file = "Oral B iO3.json"
+        output_file = f"Oral B iO3_flipkart_offers_{timestamp}.json"
         
         print("🚀 Enhanced Comprehensive Flipkart Scraper with Price & Stock Tracking")
-        print("📍 Target: all_data.json")
-        print("🔒 Amazon & Croma offers: COMPLETELY ISOLATED")
-        print("🎯 Focus: ALL Flipkart links (re-scrapes everything)")
-        print("🔍 Traversal: ALL nested locations (variants, all_matching_products, unmapped)")
+        print("📍 Target: Oral B iO3.json")
+        print("🎯 Focus: Flipkart links from variants.store_links")
         print("💰 NEW: Price extraction from Flipkart pages")
         print("📦 NEW: Refined stock status tracking with retry mechanism (in_stock: true/false/null)")
         print("📝 NEW: URL tracking in visited_urls_flipkart.txt")
