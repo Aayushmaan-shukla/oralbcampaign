@@ -1,0 +1,15 @@
+agno==1.8.1
+playwright==1.54.0
+beautifulsoup4==4.12.2
+requests==2.31.0
+selenium==4.15.2
+webdriver-manager==4.0.2
+asyncio
+json
+pathlib
+datetime
+re
+random
+time
+typing
+

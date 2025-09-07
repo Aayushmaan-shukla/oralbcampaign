@@ -1,0 +1,1016 @@
+{
+  "scraping_metadata": {
+    "total_urls": 34,
+    "successful_scrapes": 25,
+    "failed_scrapes": 9,
+    "scraping_date": "2025-09-05T12:16:37.468181",
+    "source_file": "Oral B iO3.json"
+  },
+  "results": [
+    {
+      "url": "https://www.amazon.in/iO-Limited-Electric-Toothbrush-Rechargeable/dp/B0B5HRWH1S",
+      "store_name": "amazon.in",
+      "scraped_at": "2025-09-05T12:01:32.702661",
+      "success": true,
+      "error": null,
+      "price_info": {
+        "current_price": "₹17,464.00",
+        "original_price": "₹26,049.68",
+        "discount_percentage": "33.0%",
+        "currency": "₹"
+      },
+      "offers": [
+        "‎Procter & Gamble",
+        "HDFC Bank Credit Card \n      Processing Fee of ₹299 by Bank",
+        "This item:",
+        "Reviewed in Canada on 28 April 2025",
+        "Page 1 of 2  Start over"
+      ],
+      "stock_info": {
+        "in_stock": true,
+        "stock_status": "In Stock",
+        "stock_message": ""
+      },
+      "page_title": "Oral-B Adult Io Series 3 Limited Electric Toothbrush With (2) Brush Heads, Rechargeable, Black, 1 Piece : Amazon.in: Health & Personal Care",
+      "product_images": [
+        "https://m.media-amazon.com/images/I/71jDBVInB0L._SX569_.jpg",
+        "https://images-eu.ssl-images-amazon.com/images/I/71jDBVInB0L._AC_UL232_SR232,232_.jpg",
+        "https://images-eu.ssl-images-amazon.com/images/I/71IGTRPS-FL._AC_UL232_SR232,232_.jpg"
+      ],
+      "expected_data": {
+        "expected_price": "₹15,955.43",
+        "color": "Black",
+        "packaging_type": "Unknown",
+        "product_condition": "NEW",
+        "shipping": null,
+        "offer_title": "Oral-B Adult Io Series 3 Limited Electric Toothbrush With (2) Brush Heads, Rechargeable, Black, 1 Piece"
+      }
+    },
+    {
+      "url": "https://www.caretobeauty.com/in/oral-b-iotm-series-3s-black-electric-toothbrush/",
+      "store_name": "Care to Beauty",
+      "scraped_at": "2025-09-05T12:02:01.614943",
+      "success": true,
+      "error": null,
+      "price_info": {
+        "current_price": null,
+        "original_price": null,
+        "discount_percentage": null,
+        "currency": "₹"
+      },
+      "offers": [
+        "15% price drop"
+      ],
+      "stock_info": {
+        "in_stock": false,
+        "stock_status": "Unknown",
+        "stock_message": null
+      },
+      "page_title": "Oral-B iO™ Series 3S Black Electric Toothbrush India",
+      "product_images": [
+        "https://static.beautytocare.com/cdn-cgi/image/width=1600,height=1600,f=auto/media/catalog/product//o/r/oral-b-iotm-series-3s-black-electric-toothbrush.jpg",
+        "https://static.beautytocare.com/cdn-cgi/image/width=200,height=200,f=auto/media/catalog/product//o/r/oral-b-iotm-series-3s-black-electric-toothbrush.jpg"
+      ],
+      "expected_data": {
+        "expected_price": "₹12,644.26",
+        "color": "Black",
+        "packaging_type": "Unknown",
+        "product_condition": "NEW",
+        "shipping": "Delivery ₹1,299.19",
+        "offer_title": "Oral-B iO Series 3S Black Electric Toothbrush"
+      }
+    },
+    {
+      "url": "https://www.ubuy.co.in/productuk/MJIG90V6O-oral-b-io-3-matt-black",
+      "store_name": "ubuy",
+      "scraped_at": "2025-09-05T12:02:22.854885",
+      "success": false,
+      "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.ubuy.co.in/productuk/MJIG90V6O-oral-b-io-3-matt-black\", waiting until \"networkidle\"\n",
+      "price_info": {},
+      "offers": [],
+      "stock_info": {},
+      "page_title": null,
+      "product_images": [],
+      "expected_data": {
+        "expected_price": "₹18,597",
+        "color": "Black",
+        "packaging_type": "Unknown",
+        "product_condition": "NEW",
+        "shipping": "Delivery between 8–17 Sept ₹1,170",
+        "offer_title": "Oral-B iO 3 Matt Black Ultimate Clean Electric Toothbrush, 1 Refill Holder, 1 Charger Pouch, 1 Travel Case, Designed by Braun, packaging may vary"
+      }
+    },
+    {
+      "url": "https://www.en-au.ubuy.com/product/87ZL0SGLQ-oral-b-io3-electric-toothbrush-1-with-1-ultimate-clean-brush-head-and-1-charger",
+      "store_name": "Ubuy",
+      "scraped_at": "2025-09-05T12:02:56.475632",
+      "success": false,
+      "error": "Page.goto: net::ERR_CERT_COMMON_NAME_INVALID at https://www.en-au.ubuy.com/product/87ZL0SGLQ-oral-b-io3-electric-toothbrush-1-with-1-ultimate-clean-brush-head-and-1-charger\nCall log:\n  - navigating to \"https://www.en-au.ubuy.com/product/87ZL0SGLQ-oral-b-io3-electric-toothbrush-1-with-1-ultimate-clean-brush-head-and-1-charger\", waiting until \"networkidle\"\n",
+      "price_info": {},
+      "offers": [],
+      "stock_info": {},
+      "page_title": null,
+      "product_images": [],
+      "expected_data": {
+        "expected_price": "₹8,562.92",
+        "color": "Black",
+        "packaging_type": "Unknown",
+        "product_condition": "NEW",
+        "shipping": "Delivery between 8–12 Sept ₹896.52",
+        "offer_title": "Oral-B iO3 Electric Toothbrush 1 with 1 Ultimate Clean Brush Head and 1 Charger, Black"
+      }
+    },
+    {
+      "url": "https://en-ae.ubuy.com/en/product/87ZL0SGLQ-oral-b-io3-electric-toothbrush-1-with-1-ultimate-clean-brush-head-and-1-charger",
+      "store_name": "Ubuy",
+      "scraped_at": "2025-09-05T12:03:02.994264",
+      "success": true,
+      "error": null,
+      "price_info": {
+        "current_price": null,
+        "original_price": null,
+        "discount_percentage": null,
+        "currency": "₹"
+      },
+      "offers": [
+        "Delivery :",
+        "U-Care Warranty:"
+      ],
+      "stock_info": {
+        "in_stock": true,
+        "stock_status": "In Stock",
+        "stock_message": null
+      },
+      "page_title": "Oral-B iO3 Electric Toothbrush with Ultimate Clean Global | Ubuy",
+      "product_images": [
+        "https://d2ati23fc66y9j.cloudfront.net/ubuycom/new-login/original-products.svg",
+        "https://d2ati23fc66y9j.cloudfront.net/ubuycom/new-login/original-products.svg"
+      ],
+      "expected_data": {
+        "expected_price": "₹8,038.92",
+        "color": "Black",
+        "packaging_type": "Unknown",
+        "product_condition": "NEW",
+        "shipping": "Delivery between 8–12 Sept ₹239.97",
+        "offer_title": "Oral-B iO3 Electric Toothbrush 1 with 1 Ultimate Clean Brush Head and 1 Charger, Black"
+      }
+    },
+    {
+      "url": "https://www.desertcart.in/products/646051407-oral-b-kid-io-series-3-limited-electric-toothbrush-with-2-brush-heads-rechargeable-white-1-piece",
+      "store_name": "desertcart.in",
+      "scraped_at": "2025-09-05T12:03:27.644027",
+      "success": true,
+      "error": null,
+      "price_info": {
+        "current_price": null,
+        "original_price": null,
+        "discount_percentage": null,
+        "currency": "₹"
+      },
+      "offers": [],
+      "stock_info": {
+        "in_stock": true,
+        "stock_status": "In Stock",
+        "stock_message": null
+      },
+      "page_title": "Oral B Kid Io Series 3 Limited Electric Toothbrush 2 | Desertcart INDIA",
+      "product_images": [
+        "https://track.trakkr.ai/pixel?tracking_id=1755153895204x858407882531799000&url=https%3A%2F%2Fwww.desertcart.in%2Fproducts%2F646051407-oral-b-kid-io-series-3-limited-electric-toothbrush-2"
+      ],
+      "expected_data": {
+        "expected_price": "₹25,931",
+        "color": "White",
+        "packaging_type": "Unknown",
+        "product_condition": "NEW",
+        "shipping": "₹650 delivery 10–13 Sept",
+        "offer_title": "Oral-B Kid Io Series 3 Limited Electric Toothbrush With (2) Brush Heads, Rechargeable, White, 1 Piece"
+      }
+    },
+    {
+      "url": "https://www.amazon.in/iO-Limited-Electric-Toothbrush-Rechargeable/dp/B0B5HT9TSK",
+      "store_name": "amazon.in",
+      "scraped_at": "2025-09-05T12:04:08.318868",
+      "success": true,
+      "error": null,
+      "price_info": {
+        "current_price": "₹18,924.00",
+        "original_price": "₹22,924.00",
+        "discount_percentage": "17.4%",
+        "currency": "₹"
+      },
+      "offers": [
+        "‎Procter & Gamble",
+        "HDFC Bank Credit Card \n      Processing Fee of ₹299 by Bank",
+        "This item:",
+        "3,339 global ratings",
+        "Reviewed in Canada on 10 February 2023"
+      ],
+      "stock_info": {
+        "in_stock": true,
+        "stock_status": "In Stock",
+        "stock_message": ""
+      },
+      "page_title": "Oral-B Kid Io Series 3 Limited Electric Toothbrush With (2) Brush Heads, Rechargeable, White, 1 Piece : Amazon.in: Health & Personal Care",
+      "product_images": [
+        "https://m.media-amazon.com/images/I/71gSLbXzfAL._SX569_.jpg",
+        "https://images-eu.ssl-images-amazon.com/images/I/71gSLbXzfAL._AC_UL232_SR232,232_.jpg",
+        "https://images-eu.ssl-images-amazon.com/images/I/71IGTRPS-FL._AC_UL232_SR232,232_.jpg"
+      ],
+      "expected_data": {
+        "expected_price": "₹18,924",
+        "color": "White",
+        "packaging_type": "Unknown",
+        "product_condition": "NEW",
+        "shipping": null,
+        "offer_title": "Oral-B Kid Io Series 3 Limited Electric Toothbrush With (2) Brush Heads, Rechargeable, White, 1 Piece"
+      }
+    },
+    {
+      "url": "https://www.ubuy.co.in/product/88D7EN0IO-oral-b-io-series-3-electric-toothbrush-with-2-brush-heads-white",
+      "store_name": "ubuy",
+      "scraped_at": "2025-09-05T12:04:47.500121",
+      "success": false,
+      "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.ubuy.co.in/product/88D7EN0IO-oral-b-io-series-3-electric-toothbrush-with-2-brush-heads-white\", waiting until \"networkidle\"\n",
+      "price_info": {},
+      "offers": [],
+      "stock_info": {},
+      "page_title": null,
+      "product_images": [],
+      "expected_data": {
+        "expected_price": "₹16,246",
+        "color": "White",
+        "packaging_type": "Unknown",
+        "product_condition": "NEW",
+        "shipping": "₹1,170 delivery 8–17 Sept",
+        "offer_title": "Oral-B iO Series 3 Electric Toothbrush - White"
+      }
+    },
+    {
+      "url": "https://bd-en.ubuy.com/en/product/7G9BX75EC-oral-b-io-series-3-limited-electric-toothbrush-with-2-brush-heads-rechargeable-white?srsltid=AfmBOorInbWECpZg84z8ffSrfp62rFcPk5tOzyF35TcOEiGukxmrlCtfA74",
+      "store_name": "Ubuy",
+      "scraped_at": "2025-09-05T12:05:23.481531",
+      "success": true,
+      "error": null,
+      "price_info": {
+        "current_price": null,
+        "original_price": null,
+        "discount_percentage": null,
+        "currency": "₹"
+      },
+      "offers": [
+        "Delivery :",
+        "U-Care Warranty:"
+      ],
+      "stock_info": {
+        "in_stock": true,
+        "stock_status": "In Stock",
+        "stock_message": null
+      },
+      "page_title": "Oral-B iO Series 3 Electric Toothbrush - White, 2 Global | Ubuy",
+      "product_images": [
+        "https://d2ati23fc66y9j.cloudfront.net/ubuycom/new-login/original-products.svg",
+        "https://d2ati23fc66y9j.cloudfront.net/ubuycom/new-login/original-products.svg"
+      ],
+      "expected_data": {
+        "expected_price": "₹11,687.77",
+        "color": "White",
+        "packaging_type": "Unknown",
+        "product_condition": "NEW",
+        "shipping": "Free delivery 10–13 Sept",
+        "offer_title": "Oral-B iO Deep Clean Rechargeable Electric Powered Toothbrush, White with iO Series 3"
+      }
+    },
+    {
+      "url": "https://en-ae.ubuy.com/en/product/7HBEQ24ZQ-oral-b-io-series-3-electric-toothbrush-with-2-brush-heads-rechargeable-white",
+      "store_name": "Ubuy",
+      "scraped_at": "2025-09-05T12:05:51.703034",
+      "success": true,
+      "error": null,
+      "price_info": {
+        "current_price": null,
+        "original_price": null,
+        "discount_percentage": null,
+        "currency": "₹"
+      },
+      "offers": [
+        "Delivery :",
+        "U-Care Warranty:"
+      ],
+      "stock_info": {
+        "in_stock": true,
+        "stock_status": "In Stock",
+        "stock_message": null
+      },
+      "page_title": "Oral-B iO Series 3 Electric Toothbrush - White, 2 Global | Ubuy",
+      "product_images": [
+        "https://d2ati23fc66y9j.cloudfront.net/ubuycom/new-login/original-products.svg",
+        "https://d2ati23fc66y9j.cloudfront.net/ubuycom/new-login/original-products.svg"
+      ],
+      "expected_data": {
+        "expected_price": "₹8,038.92",
+        "color": "White",
+        "packaging_type": "Unknown",
+        "product_condition": "NEW",
+        "shipping": "₹239.97 delivery 8–12 Sept",
+        "offer_title": "Oral-B iO Series 3 Electric Toothbrush with 1 Brush Head, Rechargeable, White"
+      }
+    },
+    {
+      "url": "https://blinkit.com/prn/oral-b-io3-blue-ultimate-clean-electric-toothbrush-(for-adults)/prid/624976?lat=28.4898364328016&lon=76.9999059711645",
+      "store_name": "Blinkit",
+      "scraped_at": "2025-09-05T12:06:14.259161",
+      "success": false,
+      "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://blinkit.com/prn/oral-b-io3-blue-ultimate-clean-electric-toothbrush-(for-adults)/prid/624976?lat=28.4898364328016&lon=76.9999059711645\", waiting until \"networkidle\"\n",
+      "price_info": {},
+      "offers": [],
+      "stock_info": {},
+      "page_title": null,
+      "product_images": [],
+      "expected_data": {
+        "expected_price": "₹4,875",
+        "color": "Blue",
+        "packaging_type": "Unknown",
+        "product_condition": "NEW",
+        "shipping": "Free 10-minute delivery",
+        "offer_title": "Oral-B iO3 Blue Ultimate Clean Electric Toothbrush (for Adults) - 1 unit"
+      }
+    },
+    {
+      "url": "http://www.myntra.com/Electric-Toothbrush/Oral+-+B/Oral---B-iO3-Blue-Ultimate-Clean-Electric-Toothbrush-For-Adults/32241797/buy",
+      "store_name": "Myntra",
+      "scraped_at": "2025-09-05T12:06:49.274585",
+      "success": false,
+      "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"http://www.myntra.com/Electric-Toothbrush/Oral+-+B/Oral---B-iO3-Blue-Ultimate-Clean-Electric-Toothbrush-For-Adults/32241797/buy\", waiting until \"networkidle\"\n",
+      "price_info": {},
+      "offers": [],
+      "stock_info": {},
+      "page_title": null,
+      "product_images": [],
+      "expected_data": {
+        "expected_price": "₹4,549",
+        "color": "Blue",
+        "packaging_type": "Unknown",
+        "product_condition": "NEW",
+        "shipping": "Free 3-day delivery",
+        "offer_title": "Oral - B iO3 Blue Ultimate Clean Electric Toothbrush For Adults (Pack) by Myntra"
+      }
+    },
+    {
+      "url": "https://www.yohohongkong.com/en-us/product/137427-Oral-BiO-Series-3-Electric-Toothbrush-Blue?srsltid=AfmBOopXehtrpHphWPrzQ1m0mIUa-SnIkP5yt82sA_qVED9zcj_uYePsAD8",
+      "store_name": "友和 Yoho",
+      "scraped_at": "2025-09-05T12:07:25.349528",
+      "success": false,
+      "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.yohohongkong.com/en-us/product/137427-Oral-BiO-Series-3-Electric-Toothbrush-Blue?srsltid=AfmBOopXehtrpHphWPrzQ1m0mIUa-SnIkP5yt82sA_qVED9zcj_uYePsAD8\", waiting until \"networkidle\"\n",
+      "price_info": {},
+      "offers": [],
+      "stock_info": {},
+      "page_title": null,
+      "product_images": [],
+      "expected_data": {
+        "expected_price": "₹7,899.21",
+        "color": "Blue",
+        "packaging_type": "Unknown",
+        "product_condition": "NEW",
+        "shipping": "Delivery between 5–12 Sept ₹1,130.07",
+        "offer_title": "Mastercard $120 OFF | Oral-BiO Series 3 Electric Toothbrush - Blue"
+      }
+    },
+    {
+      "url": "https://www.amazon.in/Oral-B-Ultimate-Electric-Toothbrush-Replacement/dp/B0F1YRDC7C",
+      "store_name": "amazon.in",
+      "scraped_at": "2025-09-05T12:07:59.419299",
+      "success": true,
+      "error": null,
+      "price_info": {
+        "current_price": "₹6,303.00",
+        "original_price": "₹374.00",
+        "discount_percentage": null,
+        "currency": "₹"
+      },
+      "offers": [
+        "HDFC Bank Credit Card \n      Processing Fee of ₹299 by Bank",
+        "This item:",
+        "Reviewed in India on 5 August 2025",
+        "No Cost EMI Plans",
+        "5 star4 star3 star2 star1 star3 star76%11%4%1%8%4%"
+      ],
+      "stock_info": {
+        "in_stock": true,
+        "stock_status": "In Stock",
+        "stock_message": "₹6,303.00₹6,303.00"
+      },
+      "page_title": "Oral-B iO3 Ultimate Electric Toothbrush For Adults, 3 Smart Modes, Round Brush Head (Blue) With Original iO Electric Toothbrush White Replacement Brush Heads, Pack Of 2 Refills : Amazon.in: Health & Personal Care",
+      "product_images": [
+        "https://m.media-amazon.com/images/I/71BQpM3J9IL._SX425_PIbundle-3,TopRight,0,0_SX425SY293SH20_.jpg",
+        "https://images-eu.ssl-images-amazon.com/images/I/71BQpM3J9IL._AC_UL232_SR232,232_.jpg",
+        "https://images-eu.ssl-images-amazon.com/images/I/81uOU8TRdUL._AC_UL232_SR232,232_.jpg"
+      ],
+      "expected_data": {
+        "expected_price": "₹6,303",
+        "color": "Blue",
+        "packaging_type": "Unknown",
+        "product_condition": "NEW",
+        "shipping": null,
+        "offer_title": "Oral-B iO3 Ultimate Electric Toothbrush For Adults, 3 Smart Modes, Round Brush Head (Blue) With Original iO Electric Toothbrush White Replacement "
+      }
+    },
+    {
+      "url": "https://www.ibhejo.com/oral-b-io-series-3-limited-rechargeable-electric-powered-toothbrush-black-with-2-brush-heads-and-travel-case-visible-pressure-sensor-to-protect-gu-450905",
+      "store_name": "iBhejo.com",
+      "scraped_at": "2025-09-05T12:08:30.546495",
+      "success": true,
+      "error": null,
+      "price_info": {
+        "current_price": "₹22,300",
+        "original_price": null,
+        "discount_percentage": null,
+        "currency": "₹"
+      },
+      "offers": [
+        "42% Off",
+        "25% Off",
+        "45% Off"
+      ],
+      "stock_info": {
+        "in_stock": true,
+        "stock_status": "In Stock",
+        "stock_message": null
+      },
+      "page_title": "Oral-B Io Series 3 Limited Rechargeable Electric Powered Toothbrush, Black With 2 Brush Heads And Travel Case - Visible Pressure Sensor To Protect Gu - Imported Products from USA - iBhejo",
+      "product_images": [],
+      "expected_data": {
+        "expected_price": "₹16,767.00",
+        "color": "Black",
+        "packaging_type": "Toothbrush with 2 Brush Heads + Travel Case",
+        "product_condition": "NEW",
+        "shipping": "Free delivery",
+        "offer_title": "Oral-B Io Series 3 Limited Rechargeable Electric Powered Toothbrush, Black With 2 Brush Heads And Travel Case - Visible Pressure Sensor To Protect Gu"
+      }
+    },
+    {
+      "url": "https://www.desertcart.in/products/472545605-oral-b-io-deep-clean-rechargeable-electric-powered-toothbrush-black-with-io-series-3-limited-2-brush-heads-and-travel-case-pressure-sensor-to-protect-gums-3-cleaning-settings-2-minute-timer",
+      "store_name": "desertcart.in",
+      "scraped_at": "2025-09-05T12:08:53.147453",
+      "success": true,
+      "error": null,
+      "price_info": {
+        "current_price": null,
+        "original_price": null,
+        "discount_percentage": null,
+        "currency": "₹"
+      },
+      "offers": [],
+      "stock_info": {
+        "in_stock": false,
+        "stock_status": "Unknown",
+        "stock_message": null
+      },
+      "page_title": "Oral B Io Deep Clean Rechargeable Electric Powered Toothbrush Black | Desertcart INDIA",
+      "product_images": [
+        "https://track.trakkr.ai/pixel?tracking_id=1755153895204x858407882531799000&url=https%3A%2F%2Fwww.desertcart.in%2Fproducts%2F472545605-oral-b-io-deep-clean-rechargeable-electric-powered-toothbrush-black"
+      ],
+      "expected_data": {
+        "expected_price": "₹15,210",
+        "color": "Black",
+        "packaging_type": "Toothbrush with 2 Brush Heads + Travel Case",
+        "product_condition": "NEW",
+        "shipping": "Delivery between 10–13 Sept ₹650",
+        "offer_title": "Oral-B iO Deep Clean Rechargeable Electric Powered Toothbrush, Black with iO Series 3 Limited, 2 Brush Heads and Travel Case - Pressure Sensor to Prot"
+      }
+    },
+    {
+      "url": "https://www.desertcart.in/products/555050976-oral-b-io-deep-clean-rechargeable-electric-powered-toothbrush-black-with-io-series-3-limited-2-brush-heads-and-travel-case-pressure-sensor-to-protect-gums-3-cleaning-settings-2-minute-timer",
+      "store_name": "desertcart.in",
+      "scraped_at": "2025-09-05T12:09:16.905245",
+      "success": true,
+      "error": null,
+      "price_info": {
+        "current_price": null,
+        "original_price": null,
+        "discount_percentage": null,
+        "currency": "₹"
+      },
+      "offers": [],
+      "stock_info": {
+        "in_stock": true,
+        "stock_status": "In Stock",
+        "stock_message": null
+      },
+      "page_title": "Oral B Io Deep Clean Rechargeable Electric Powered Toothbrush Black | Desertcart INDIA",
+      "product_images": [
+        "https://track.trakkr.ai/pixel?tracking_id=1755153895204x858407882531799000&url=https%3A%2F%2Fwww.desertcart.in%2Fproducts%2F555050976-oral-b-io-deep-clean-rechargeable-electric-powered-toothbrush-black"
+      ],
+      "expected_data": {
+        "expected_price": "₹26,349",
+        "color": "Black",
+        "packaging_type": "Toothbrush with 2 Brush Heads + Travel Case",
+        "product_condition": "USED",
+        "shipping": "₹650 delivery 10–13 Sept",
+        "offer_title": "Oral-B iO Deep Clean Rechargeable Electric Powered Toothbrush, Black with iO Series 3 Limited, 2 Brush Heads and Travel Case - Pressure Sensor to Prot"
+      }
+    },
+    {
+      "url": "https://www.ubuy.co.in/product/8252SN2B8-oral-b-io-series-3-limited-electric-toothbrush-with-2-brush-heads-rechargeable-black",
+      "store_name": "ubuy",
+      "scraped_at": "2025-09-05T12:09:37.793963",
+      "success": true,
+      "error": null,
+      "price_info": {
+        "current_price": null,
+        "original_price": null,
+        "discount_percentage": null,
+        "currency": "₹"
+      },
+      "offers": [],
+      "stock_info": {
+        "in_stock": false,
+        "stock_status": "Unknown",
+        "stock_message": null
+      },
+      "page_title": "Oral-B iO Series 3 Electric Toothbrush - White, 2 India | Ubuy",
+      "product_images": [
+        "https://bat.bing.com/action/0?ti=199014879&tm=gtm002&Ver=2&mid=8350e687-fbdf-49ee-a329-20490d65f8e9&bo=1&sid=19f6d1108a2211f09edc53373a38b9e3&vid=19f76c708a2211f088ab4dff4e834fe6&vids=0&msclkid=N&uach=pv%3D19.0.0&pi=918639831&lg=en-US&sw=1280&sh=720&sc=24&tl=Oral-B%20iO%20Series%203%20Electric%20Toothbrush%20-%20White,%202%20India%20%7C%20Ubuy&p=https%3A%2F%2Fwww.ubuy.co.in%2Fproduct%2F8252SN2B8-oral-b-io-series-3-limited-electric-toothbrush-with-2-brush-heads-rechargeable-black&r=&lt=3972&evt=pageLoad&sv=2&cdb=AQAQ&rn=654499"
+      ],
+      "expected_data": {
+        "expected_price": "₹10,368",
+        "color": "White",
+        "packaging_type": "Toothbrush with 2 Brush Heads + Travel Case",
+        "product_condition": "NEW",
+        "shipping": "₹1,170 delivery 8–17 Sept",
+        "offer_title": "Oral-B iO Series 3 Electric Toothbrush - White, 2 Brush Heads, Travel Case, Pressure Sensor, 3 Modes, 2 Minute Timer"
+      }
+    },
+    {
+      "url": "https://www.desertcart.in/products/478447418-oral-b-io-deep-clean-rechargeable-electric-powered-toothbrush-white-with-io-series-3-limited-2-brush-heads-and-travel-case-pressure-sensor-to-protect-gums-3-cleaning-settings-2-minute-timer",
+      "store_name": "desertcart.in",
+      "scraped_at": "2025-09-05T12:10:21.894027",
+      "success": true,
+      "error": null,
+      "price_info": {
+        "current_price": null,
+        "original_price": null,
+        "discount_percentage": null,
+        "currency": "₹"
+      },
+      "offers": [],
+      "stock_info": {
+        "in_stock": true,
+        "stock_status": "In Stock",
+        "stock_message": null
+      },
+      "page_title": "Oral B Io Deep Clean Rechargeable Electric Powered Toothbrush White | Desertcart INDIA",
+      "product_images": [
+        "https://track.trakkr.ai/pixel?tracking_id=1755153895204x858407882531799000&url=https%3A%2F%2Fwww.desertcart.in%2Fproducts%2F478447418-oral-b-io-deep-clean-rechargeable-electric-powered-toothbrush-white"
+      ],
+      "expected_data": {
+        "expected_price": "₹17,680",
+        "color": "White",
+        "packaging_type": "Toothbrush with 2 Brush Heads + Travel Case",
+        "product_condition": "USED",
+        "shipping": "₹650 delivery 10–13 Sept",
+        "offer_title": "Oral-B iO Deep Clean Rechargeable Electric Powered Toothbrush, White with iO Series 3 Limited, 2 Brush Heads and Travel Case - Pressure Sensor to Prot"
+      }
+    },
+    {
+      "url": "https://esupli.com/products/oral-b-io3-blush-pink-electric-toothbrush-with-travel-case?srsltid=AfmBOoqHMofrRZfG6qW2E3OzPM4XJA11Wi6aE6VLVcpOa1NGiFLVfJQcLF4",
+      "store_name": "esupli.com",
+      "scraped_at": "2025-09-05T12:10:53.125235",
+      "success": false,
+      "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://esupli.com/products/oral-b-io3-blush-pink-electric-toothbrush-with-travel-case?srsltid=AfmBOoqHMofrRZfG6qW2E3OzPM4XJA11Wi6aE6VLVcpOa1NGiFLVfJQcLF4\", waiting until \"networkidle\"\n",
+      "price_info": {},
+      "offers": [],
+      "stock_info": {},
+      "page_title": null,
+      "product_images": [],
+      "expected_data": {
+        "expected_price": "₹21,419",
+        "color": "Pink",
+        "packaging_type": "Unknown",
+        "product_condition": "NEW",
+        "shipping": "Free delivery between 8–11 Sept",
+        "offer_title": "Oral-B Io3 Blush Pink Electric Toothbrush With Travel Case"
+      }
+    },
+    {
+      "url": "https://www.amazon.in/Oral-B-Ultimate-Electric-Toothbrush-Adults/dp/B0C1H5CFSX",
+      "store_name": "amazon.in",
+      "scraped_at": "2025-09-05T12:11:28.229413",
+      "success": true,
+      "error": null,
+      "price_info": {
+        "current_price": "₹4,949.00",
+        "original_price": "₹374.00",
+        "discount_percentage": null,
+        "currency": "₹"
+      },
+      "offers": [
+        "‎Procter & Gamble",
+        "HDFC Bank Credit Card \n      Processing Fee of ₹299 by Bank",
+        "This item:",
+        "Reviewed in India on 5 August 2025",
+        "iO3 Toothbrush"
+      ],
+      "stock_info": {
+        "in_stock": true,
+        "stock_status": "In Stock",
+        "stock_message": "₹"
+      },
+      "page_title": "Oral-B iO3 Ultimate Electric Toothbrush, 3 Smart Modes, Pressure Sensor,2 Year Warranty by Oral B, IPX7 Waterproof, Round Brush Head (Ice Blue) : Amazon.in: Health & Personal Care",
+      "product_images": [
+        "https://m.media-amazon.com/images/I/71JBszBKblL._SX425_.jpg",
+        "https://images-eu.ssl-images-amazon.com/images/I/71JBszBKblL._AC_UL232_SR232,232_.jpg",
+        "https://images-eu.ssl-images-amazon.com/images/I/71dAE6Ly87L._AC_UL232_SR232,232_.jpg"
+      ],
+      "expected_data": {
+        "expected_price": "₹4,949",
+        "color": "Unknown",
+        "packaging_type": "Unknown",
+        "product_condition": "NEW",
+        "shipping": null,
+        "offer_title": "Oral-B iO3 Ultimate Electric Toothbrush, 3 Smart Modes, Pressure Sensor,2 Year Warranty by Oral B, IPX7 Waterproof, Round Brush Head (Ice Blue)"
+      }
+    },
+    {
+      "url": "http://www.flipkart.com/oral-b-io3-ultimate-adults-3-smart-modes-pressure-sensor-electric-toothbrush/p/itm9ba560cc1a8ee?pid=ETBHC8DAHGDSJ4BJ&lid=LSTETBHC8DAHGDSJ4BJYZ401I&marketplace=FLIPKART&cmpid=content_electric-toothbrush_8965229628_gmc",
+      "store_name": "Flipkart",
+      "scraped_at": "2025-09-05T12:12:02.437113",
+      "success": true,
+      "error": null,
+      "price_info": {
+        "current_price": null,
+        "original_price": null,
+        "discount_percentage": null,
+        "currency": "₹"
+      },
+      "offers": [],
+      "stock_info": {
+        "in_stock": true,
+        "stock_status": "In Stock",
+        "stock_message": null
+      },
+      "page_title": "Oral-B Io3 Ultimate For Adults, 3 Smart Modes, Pressure Sensor Electric Toothbrush - Oral-B : Flipkart.com",
+      "product_images": [],
+      "expected_data": {
+        "expected_price": "₹5,599",
+        "color": "Unknown",
+        "packaging_type": "Unknown",
+        "product_condition": "NEW",
+        "shipping": "Free delivery by 17 Sept",
+        "offer_title": "Oral-b Io3 Ultimate For Adults, 3 Smart Modes, Pressure Sensor Electric Toothbrush"
+      }
+    },
+    {
+      "url": "https://www.desertcart.in/products/536241530-oral-bio3-electric-toothbrush-for-adults-oral-b-electric-toothbrushes-mothers-day-gifts-1-toothbrush-head-3-modes-with-teeth-whitening-electric-toothbrush-2-pin-uk-plug-blue",
+      "store_name": "desertcart.in",
+      "scraped_at": "2025-09-05T12:12:19.011533",
+      "success": true,
+      "error": null,
+      "price_info": {
+        "current_price": null,
+        "original_price": null,
+        "discount_percentage": null,
+        "currency": "₹"
+      },
+      "offers": [],
+      "stock_info": {
+        "in_stock": true,
+        "stock_status": "In Stock",
+        "stock_message": null
+      },
+      "page_title": "Oral B Io3 Electric Toothbrush For Adults Oral B Electric | Desertcart INDIA",
+      "product_images": [
+        "https://track.trakkr.ai/pixel?tracking_id=1755153895204x858407882531799000&url=https%3A%2F%2Fwww.desertcart.in%2Fproducts%2F536241530-oral-b-io3-electric-toothbrush-for-adults-oral-b-electric"
+      ],
+      "expected_data": {
+        "expected_price": "₹9,498",
+        "color": "Unknown",
+        "packaging_type": "Unknown",
+        "product_condition": "NEW",
+        "shipping": "₹650 delivery 10–13 Sept",
+        "offer_title": "Oral-BiO3 Electric Toothbrush For Adults, Oral B Electric Toothbrushes, Mothers Day Gifts, 1 Toothbrush Head, 3 Modes With Teeth Whitening, Electric T"
+      }
+    },
+    {
+      "url": "http://www.flipkart.com/oral-b-io-3-electric-toothbrush/p/itmb443e5087eeab?pid=ETBGUGSR5W5ZZ7HZ&lid=LSTETBGUGSR5W5ZZ7HZM6IWUQ&marketplace=FLIPKART&cmpid=content_electric-toothbrush_8965229628_gmc",
+      "store_name": "Flipkart",
+      "scraped_at": "2025-09-05T12:12:44.053788",
+      "success": true,
+      "error": null,
+      "price_info": {
+        "current_price": null,
+        "original_price": null,
+        "discount_percentage": null,
+        "currency": "₹"
+      },
+      "offers": [],
+      "stock_info": {
+        "in_stock": true,
+        "stock_status": "In Stock",
+        "stock_message": null
+      },
+      "page_title": "Oral-B IO 3 Electric Toothbrush - Oral-B : Flipkart.com",
+      "product_images": [],
+      "expected_data": {
+        "expected_price": "₹17,652",
+        "color": "Unknown",
+        "packaging_type": "Unknown",
+        "product_condition": "NEW",
+        "shipping": "Free delivery by 14 Oct",
+        "offer_title": "Oral-b Io 3 Electric Toothbrush"
+      }
+    },
+    {
+      "url": "http://www.flipkart.com/oral-b-iog3-1b6-0-electric-toothbrush/p/itm14f0d9bf6257c?pid=ETBGUGV2RM2ZSCSS&lid=LSTETBGUGV2RM2ZSCSS6DSMCM&marketplace=FLIPKART&cmpid=content_electric-toothbrush_8965229628_gmc",
+      "store_name": "Flipkart",
+      "scraped_at": "2025-09-05T12:12:56.663626",
+      "success": true,
+      "error": null,
+      "price_info": {
+        "current_price": null,
+        "original_price": null,
+        "discount_percentage": null,
+        "currency": "₹"
+      },
+      "offers": [],
+      "stock_info": {
+        "in_stock": true,
+        "stock_status": "In Stock",
+        "stock_message": null
+      },
+      "page_title": "Oral-B iOG3.1B6.0 Electric Toothbrush - Oral-B : Flipkart.com",
+      "product_images": [],
+      "expected_data": {
+        "expected_price": "₹12,995",
+        "color": "Unknown",
+        "packaging_type": "Unknown",
+        "product_condition": "NEW",
+        "shipping": "Free delivery",
+        "offer_title": "Oral-b Iog3.1b6.0 Electric Toothbrush"
+      }
+    },
+    {
+      "url": "http://www.flipkart.com/oral-b-io-g3-2q6-2kd-electric-toothbrush/p/itm0b12382472ebe?pid=ETBGUGSVSCUNFUYZ&lid=LSTETBGUGSVSCUNFUYZGK4YG2&marketplace=FLIPKART&cmpid=content_electric-toothbrush_8965229628_gmc",
+      "store_name": "Flipkart",
+      "scraped_at": "2025-09-05T12:13:12.281653",
+      "success": true,
+      "error": null,
+      "price_info": {
+        "current_price": null,
+        "original_price": null,
+        "discount_percentage": null,
+        "currency": "₹"
+      },
+      "offers": [],
+      "stock_info": {
+        "in_stock": true,
+        "stock_status": "In Stock",
+        "stock_message": null
+      },
+      "page_title": "Oral-B iO G3.2Q6.2KD Electric Toothbrush - Oral-B : Flipkart.com",
+      "product_images": [],
+      "expected_data": {
+        "expected_price": "₹17,827",
+        "color": "Unknown",
+        "packaging_type": "Unknown",
+        "product_condition": "NEW",
+        "shipping": "Free delivery",
+        "offer_title": "Oral-b Io G3.2q6.2kd Electric Toothbrush"
+      }
+    },
+    {
+      "url": "https://www.amazon.in/Oral-B-Electric-Toothbrush-Ultimate-Charger/dp/B0BP5XSH7T",
+      "store_name": "amazon.in",
+      "scraped_at": "2025-09-05T12:13:26.266082",
+      "success": true,
+      "error": null,
+      "price_info": {
+        "current_price": "₹12,292.00",
+        "original_price": "₹2,499.00",
+        "discount_percentage": null,
+        "currency": "₹"
+      },
+      "offers": [
+        "Ships from and sold by Rathand.",
+        "‎Procter & Gamble",
+        "HDFC Bank Credit Card \n      Processing Fee of ₹299 by Bank",
+        "This item:",
+        "No Cost EMI Plans"
+      ],
+      "stock_info": {
+        "in_stock": true,
+        "stock_status": "In Stock",
+        "stock_message": ""
+      },
+      "page_title": "Oral-B iO3 Electric Toothbrush (1) with (1) Ultimate Clean Brush Head and (1) Charger : Amazon.in: Health & Personal Care",
+      "product_images": [
+        "https://m.media-amazon.com/images/I/71O-Wr6HQrL._SX569_.jpg",
+        "https://images-eu.ssl-images-amazon.com/images/I/71O-Wr6HQrL._AC_UL232_SR232,232_.jpg",
+        "https://images-eu.ssl-images-amazon.com/images/I/71t2SoumcvL._AC_UL232_SR232,232_.jpg"
+      ],
+      "expected_data": {
+        "expected_price": "₹12,292",
+        "color": "Unknown",
+        "packaging_type": "Unknown",
+        "product_condition": "NEW",
+        "shipping": null,
+        "offer_title": "Oral-B iO3 Electric Toothbrush (1) with (1) Ultimate Clean Brush Head and (1) Charger"
+      }
+    },
+    {
+      "url": "https://www.desertcart.in/products/534950453-oral-b-io3-electric-toothbrushes-adults-oral-b-electric-toothbrush-gifts-for-him-or-her-1-toothbrush-head-3-modes-with-teeth-whitening-electric-toothbrush-2-pin-uk-plug-black",
+      "store_name": "desertcart.in",
+      "scraped_at": "2025-09-05T12:13:45.965388",
+      "success": true,
+      "error": null,
+      "price_info": {
+        "current_price": null,
+        "original_price": null,
+        "discount_percentage": null,
+        "currency": "₹"
+      },
+      "offers": [],
+      "stock_info": {
+        "in_stock": true,
+        "stock_status": "In Stock",
+        "stock_message": null
+      },
+      "page_title": "Oral Bio3 Electric Toothbrushes Adults Oral B Electric Toothbrush Gifts | Desertcart INDIA",
+      "product_images": [
+        "https://track.trakkr.ai/pixel?tracking_id=1755153895204x858407882531799000&url=https%3A%2F%2Fwww.desertcart.in%2Fproducts%2F534950453-oral-bio3-electric-toothbrushes-adults-oral-b-electric-toothbrush-gifts"
+      ],
+      "expected_data": {
+        "expected_price": "₹16,263",
+        "color": "Unknown",
+        "packaging_type": "Unknown",
+        "product_condition": "NEW",
+        "shipping": "Delivery between 10–13 Sept ₹650",
+        "offer_title": "Oral-B iO3 Electric Toothbrushes Adults, Oral B Electric Toothbrush, Gifts for him or her, 1 Toothbrush Head, 3 Modes With Teeth Whitening, Electric T"
+      }
+    },
+    {
+      "url": "https://www.ibhejo.com/oral-b-io3-electric-toothbrush-1-with-1-ultimate-clean-brush-head-and-1-charger-401025",
+      "store_name": "iBhejo.com",
+      "scraped_at": "2025-09-05T12:14:12.501588",
+      "success": true,
+      "error": null,
+      "price_info": {
+        "current_price": "₹15,507",
+        "original_price": null,
+        "discount_percentage": null,
+        "currency": "₹"
+      },
+      "offers": [
+        "30% Off",
+        "25% Off",
+        "45% Off",
+        "35% Off"
+      ],
+      "stock_info": {
+        "in_stock": true,
+        "stock_status": "In Stock",
+        "stock_message": null
+      },
+      "page_title": "Oral-B iO3 Electric Toothbrush (1) with (1) Ultimate Clean Brush Head and (1) Charger - Imported Products from USA - iBhejo",
+      "product_images": [],
+      "expected_data": {
+        "expected_price": "₹11,660.00",
+        "color": "Unknown",
+        "packaging_type": "Unknown",
+        "product_condition": "NEW",
+        "shipping": "Free delivery",
+        "offer_title": "Oral-B iO3 Electric Toothbrush (1) with (1) Ultimate Clean Brush Head and (1) Charger"
+      }
+    },
+    {
+      "url": "https://surplusdekho.com/products/oral-b-io3-ultimate-electric-toothbrush-3-smart-modes-pressure-sensor-2-year-warranty-by-oral-b-ipx7-waterproof-round-brush-head-ice-blue?variant=50399477563672",
+      "store_name": "surplusdekho.com",
+      "scraped_at": "2025-09-05T12:14:30.614576",
+      "success": false,
+      "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://surplusdekho.com/products/oral-b-io3-ultimate-electric-toothbrush-3-smart-modes-pressure-sensor-2-year-warranty-by-oral-b-ipx7-waterproof-round-brush-head-ice-blue?variant=50399477563672\", waiting until \"networkidle\"\n",
+      "price_info": {},
+      "offers": [],
+      "stock_info": {},
+      "page_title": null,
+      "product_images": [],
+      "expected_data": {
+        "expected_price": "₹2,799",
+        "color": "Unknown",
+        "packaging_type": "Unknown",
+        "product_condition": "NEW",
+        "shipping": null,
+        "offer_title": "Oral-B iO3 Ultimate Electric Toothbrush, 3 Smart Modes, Pressure Sensor,2 Year Warranty by Oral B, IPX7 Waterproof, Round Brush Head (Ice Blue) - "
+      }
+    },
+    {
+      "url": "https://mcgrocer.com/products/oral-b-io3-ultimate-clean-electric-toothbrush-ice-blue?currency=GBP&variant=46022332023022&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=9bdd4526a2c2&srsltid=AfmBOorRgl6DdKTwmhVCF41NHQqYMJ8EHZxT46pUfLQ7NsjqVxoL9GIEn3E",
+      "store_name": "McGrocer",
+      "scraped_at": "2025-09-05T12:15:03.714689",
+      "success": true,
+      "error": null,
+      "price_info": {
+        "current_price": "£3.50",
+        "original_price": null,
+        "discount_percentage": null,
+        "currency": "₹"
+      },
+      "offers": [],
+      "stock_info": {
+        "in_stock": true,
+        "stock_status": "In Stock",
+        "stock_message": null
+      },
+      "page_title": "Oral-B iO3 Ultimate Clean Electric Toothbrush - Ice Blue | McGrocer",
+      "product_images": [
+        "https://bat.bing.com/action/0?ti=97009465&Ver=2&mid=0c80c93a-959d-4197-ab73-ba78dd80600c&bo=4&sid=dfe95f708a2311f0a4721b20b987e9bc&vid=dfe9a4208a2311f085f943696005c254&vids=1&msclkid=N&uach=pv%3D19.0.0&pi=918639831&lg=en-US&sw=1280&sh=720&sc=24&tl=Oral-B%20iO3%20Ultimate%20Clean%20Electric%20Toothbrush%20-%20Ice%20Blue%20%7C%20McGrocer&p=https%3A%2F%2Fmcgrocer.com%2Fproducts%2Foral-b-io3-ultimate-clean-electric-toothbrush-ice-blue%3Fcurrency%3DGBP%26variant%3D46022332023022%26utm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3DGoogle%2520Shopping%26stkn%3D9bdd4526a2c2%26srsltid%3DAfmBOorRgl6DdKTwmhVCF41NHQqYMJ8EHZxT46pUfLQ7NsjqVxoL9GIEn3E&r=&lt=2607&evt=pageLoad&sv=2&asc=G&cdb=AQAS&rn=227892"
+      ],
+      "expected_data": {
+        "expected_price": "₹26,526.62",
+        "color": "Unknown",
+        "packaging_type": "Unknown",
+        "product_condition": "NEW",
+        "shipping": "Delivery between 11–13 Sept ₹4,618.47",
+        "offer_title": "Oral-B iO3 Ultimate Clean Electric Toothbrush - Ice Blue"
+      }
+    },
+    {
+      "url": "https://tiedex.co.uk/products/tiedex-uk-oral-b-io-3-electric-toothbrush-ice-blue?currency=GBP&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=286bb50cfe72&srsltid=AfmBOoq8wxtqXVWi3WM_xyQD485hp2OFgo2dOY8tGgFYK15D92qDecJz41k",
+      "store_name": "TieDex",
+      "scraped_at": "2025-09-05T12:15:26.712538",
+      "success": false,
+      "error": "Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://tiedex.co.uk/products/tiedex-uk-oral-b-io-3-electric-toothbrush-ice-blue?currency=GBP&utm_source=google&utm_medium=cpc&utm_campaign=Google%20Shopping&stkn=286bb50cfe72&srsltid=AfmBOoq8wxtqXVWi3WM_xyQD485hp2OFgo2dOY8tGgFYK15D92qDecJz41k\", waiting until \"networkidle\"\n",
+      "price_info": {},
+      "offers": [],
+      "stock_info": {},
+      "page_title": null,
+      "product_images": [],
+      "expected_data": {
+        "expected_price": "₹30,670.23",
+        "color": "Unknown",
+        "packaging_type": "Unknown",
+        "product_condition": "NEW",
+        "shipping": "Free delivery",
+        "offer_title": "TieDex UK ORAL B iO 3 Electric Toothbrush - Ice Blue"
+      }
+    },
+    {
+      "url": "http://www.flipkart.com/oral-b-io-g3-1a6-0-electric-toothbrush/p/itm531a26cef6a73?pid=ETBGUGV4F7PHD5WU&lid=LSTETBGUGV4F7PHD5WUUD3V2A&marketplace=FLIPKART&cmpid=content_electric-toothbrush_8965229628_gmc",
+      "store_name": "Flipkart",
+      "scraped_at": "2025-09-05T12:16:00.110381",
+      "success": true,
+      "error": null,
+      "price_info": {
+        "current_price": null,
+        "original_price": null,
+        "discount_percentage": null,
+        "currency": "₹"
+      },
+      "offers": [],
+      "stock_info": {
+        "in_stock": true,
+        "stock_status": "In Stock",
+        "stock_message": null
+      },
+      "page_title": "Oral-B iO G3.1A6.0 Electric Toothbrush - Oral-B : Flipkart.com",
+      "product_images": [],
+      "expected_data": {
+        "expected_price": "₹13,713",
+        "color": "Unknown",
+        "packaging_type": "Unknown",
+        "product_condition": "NEW",
+        "shipping": "Free delivery by 14 Oct",
+        "offer_title": "Oral-b Io G3.1a6.0 Electric Toothbrush"
+      }
+    },
+    {
+      "url": "https://www.desertcart.in/products/469458407-oral-bio-series-3-electric-toothbrush-with-2-brush-heads-rechargeable-white",
+      "store_name": "desertcart.in",
+      "scraped_at": "2025-09-05T12:16:15.340084",
+      "success": true,
+      "error": null,
+      "price_info": {
+        "current_price": null,
+        "original_price": null,
+        "discount_percentage": null,
+        "currency": "₹"
+      },
+      "offers": [],
+      "stock_info": {
+        "in_stock": true,
+        "stock_status": "In Stock",
+        "stock_message": null
+      },
+      "page_title": "Oral Bio Series 3 Electric Toothbrush With 2 Brush Heads | Desertcart INDIA",
+      "product_images": [
+        "https://track.trakkr.ai/pixel?tracking_id=1755153895204x858407882531799000&url=https%3A%2F%2Fwww.desertcart.in%2Fproducts%2F469458407-oral-bio-series-3-electric-toothbrush-with-2-brush-heads"
+      ],
+      "expected_data": {
+        "expected_price": "₹13,573",
+        "color": "White",
+        "packaging_type": "Toothbrush with 2 Brush Heads",
+        "product_condition": "NEW",
+        "shipping": "₹650 delivery 10–13 Sept",
+        "offer_title": "Oral-BiO Series 3 Electric Toothbrush with (2) Brush Heads, Rechargeable, White"
+      }
+    }
+  ]
+}

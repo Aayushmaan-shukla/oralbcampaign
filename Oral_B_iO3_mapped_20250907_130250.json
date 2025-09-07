@@ -23,30 +23,12 @@
           "packaging_type_valid": true,
           "color_valid": true,
           "is_active": true,
-          "last_seen": "2025-09-04T19:28:23.718746"
-        },
-        {
-          "name": "Care to Beauty",
-          "price": "₹12,644.26",
-          "url": "https://www.caretobeauty.com/in/oral-b-iotm-series-3s-black-electric-toothbrush/",
-          "product_condition": "NEW",
-          "shipping": "Delivery ₹1,299.19",
-          "store_favicon": "https://encrypted-tbn2.gstatic.com/faviconV2?url=https://www.caretobeauty.com&client=SHOPPING&size=32&type=FAVICON&fallback_opts=TYPE,SIZE,URL",
-          "offer_title": "Oral-B iO Series 3S Black Electric Toothbrush",
-          "catalog_id": "catalogid:16269834143347735846,productid:,gpcid:14674633487998797582,headlineOfferDocid:6960106708248767272,rds:PC_14674633487998797582|PROD_PC_14674633487998797582,imageDocid:14842489238276809588,mid:576462789675377995,pvt:hg,pvf:",
-          "LLM_PackagingType": null,
-          "LLM_Color": "Black",
-          "LLM_Confidence": "high",
-          "LLM_Reasoning": "The title mentions 'Black' which matches the official color list exactly. There is no exact match for any official packaging type mentioned in the title, so packaging type is null.",
-          "LLM_Verified": true,
-          "needs_manual_correction": false,
-          "packaging_type_valid": true,
-          "color_valid": true,
-          "is_active": true,
-          "last_seen": "2025-09-04T19:28:23.718746"
+          "last_seen": "2025-09-04T19:28:23.718746",
+          "in_stock": true,
+          "platform_url": "https://www.amazon.in/iO-Limited-Electric-Toothbrush-Rechargeable/dp/B0B5HRWH1S",
+          "product_name_via_url": "Oral-B Adult Io Series 3 Limited Electric Toothbrush With (2) Brush Heads, Rechargeable, Black, 1 Piece",
+          "ranked_offers": []
         }
-       
-
 
       ],
       "variant_stats": {
@@ -60,7 +42,6 @@
       "packaging_type": "Unknown",
       "color": "White",
       "store_links": [
-
         {
           "name": "amazon.in",
           "price": "₹18,924",
@@ -79,10 +60,30 @@
           "packaging_type_valid": true,
           "color_valid": true,
           "is_active": true,
-          "last_seen": "2025-09-04T19:28:23.718746"
+          "last_seen": "2025-09-04T19:28:23.718746",
+          "in_stock": true,
+          "platform_url": "https://www.amazon.in/iO-Limited-Electric-Toothbrush-Rechargeable/dp/B0B5HT9TSK",
+          "product_name_via_url": "Oral-B Kid Io Series 3 Limited Electric Toothbrush With (2) Brush Heads, Rechargeable, White, 1 Piece",
+          "ranked_offers": [
+            {
+              "title": "Other Offer",
+              "description": "",
+              "amount": 0.0,
+              "bank": null,
+              "validity": null,
+              "min_spend": null,
+              "score": null,
+              "is_instant": true,
+              "net_effective_price": 18924.0,
+              "is_applicable": true,
+              "note": "💫 Special other offer available for your purchase.",
+              "offer_type": "Other Offer",
+              "rank": null,
+              "card_type": null,
+              "card_provider": null
+            }
+          ]
         }
-
-
       ],
       "variant_stats": {
         "total_offers": 5,
@@ -113,7 +114,8 @@
           "packaging_type_valid": true,
           "color_valid": true,
           "is_active": true,
-          "last_seen": "2025-09-04T19:28:23.718746"
+          "last_seen": "2025-09-04T19:28:23.718746",
+          "ranked_offers":[]
         },
         {
           "name": "Myntra",
@@ -132,9 +134,62 @@
           "needs_manual_correction": false,
           "packaging_type_valid": true,
           "color_valid": true,
-          "is_active": false
-        },
+          "is_active": false,
+          "ranked_offers":[
+            {
+              "title": "Bank Offer",
+              "description": "Coupon Discount: 20% off , Applicable on: Orders above Rs. 1499 , Coupon code: STACKUP",
+              "amount": 818.8,
+              "bank": "",
+              "validity": null,
+              "min_spend": null,
+              "score": 100,
+              "is_instant": true,
+              "net_effective_price": 3275.2,
+              "is_applicable": true,
+              "note": "Coupon discount: 20% off, applicable on orders above Rs. 1499, coupon code: STACKUP",
+              "offer_type": "Bank Offer",
+              "card_type": "",
+              "card_provider": null,
+              "rank": 1
+            },
+            {
+              "title": "Bank Offer",
+              "description": "10% Discount on IDFC FIRST SWYP Credit Card",
+              "amount": 409.4,
+              "bank": "IDFC Bank",
+              "validity": null,
+              "min_spend": null,
+              "score": 100,
+              "is_instant": true,
+              "net_effective_price": 3684.6,
+              "is_applicable": true,
+              "note": "10% Discount on IDFC FIRST SWYP Credit Card",
+              "offer_type": "Bank Offer",
+              "card_type": "Credit Card",
+              "card_provider": null,
+              "rank": 3
+            },
+            {
+              "title": "Bank Offer",
+              "description": "7.5% Discount on Myntra Kotak Credit Card",
+              "amount": 318.675,
+              "bank": "Kotak Mahindra Bank",
+              "validity": null,
+              "min_spend": null,
+              "score": 100,
+              "is_instant": true,
+              "net_effective_price": 3364.325,
+              "is_applicable": true,
+              "note": "10% Discount on IDFC FIRST SWYP Credit Card",
+              "offer_type": "Bank Offer",
+              "card_type": "Credit Card",
+              "card_provider": null,
+              "rank": 2
+            }
 
+          ]
+        },
         {
           "name": "amazon.in",
           "price": "₹6,303",
@@ -155,7 +210,11 @@
           "is_new": true,
           "needs_manual_verification": true,
           "is_active": true,
-          "last_seen": "2025-09-04T19:28:46.179804"
+          "last_seen": "2025-09-04T19:28:46.179804",
+          "in_stock": true,
+          "platform_url": "https://www.amazon.in/Oral-B-Ultimate-Electric-Toothbrush-Replacement/dp/B0F1YRDC7C?th=1",
+          "product_name_via_url": "Oral-B iO3 Ultimate Electric Toothbrush For Adults, 3 Smart Modes, Round Brush Head (Blue) With Original iO Electric Toothbrush White Replacement Brush Heads, Pack Of 2 Refills",
+          "ranked_offers": []
         }
       ],
       "variant_stats": {
@@ -187,10 +246,26 @@
           "packaging_type_valid": true,
           "color_valid": true,
           "is_active": true,
-          "last_seen": "2025-09-04T19:28:23.718746"
+          "last_seen": "2025-09-04T19:28:23.718746",
+          "ranked_offers":[            
+            {
+            "title": "Bank Offer",
+            "description": "Extra 5% Off with Sitewide Code BHEJO5",
+            "amount": 838.35,
+            "bank": "",
+            "validity": null,
+            "min_spend": null,
+            "score": 100,
+            "is_instant": true,
+            "net_effective_price": 15928.65,
+            "is_applicable": true,
+            "note": "Extra 5% Off with Sitewide Code BHEJO5",
+            "offer_type": "Bank Offer",
+            "card_type": "",
+            "card_provider": null,
+            "rank": 1
+          }]
         }
-
-
       ],
       "variant_stats": {
         "total_offers": 3,
@@ -202,10 +277,7 @@
     {
       "packaging_type": "Toothbrush with 2 Brush Heads + Travel Case",
       "color": "White",
-      "store_links": [
-
-
-      ],
+      "store_links": [],
       "variant_stats": {
         "total_offers": 2,
         "verified_offers": 2,
@@ -216,9 +288,7 @@
     {
       "packaging_type": "Unknown",
       "color": "Pink",
-      "store_links": [
-
-      ],
+      "store_links": [],
       "variant_stats": {
         "total_offers": 1,
         "verified_offers": 1,
@@ -248,7 +318,11 @@
           "packaging_type_valid": true,
           "color_valid": true,
           "is_active": true,
-          "last_seen": "2025-09-04T19:28:23.718746"
+          "last_seen": "2025-09-04T19:28:23.718746",
+          "in_stock": true,
+          "platform_url": "https://www.amazon.in/Oral-B-Ultimate-Electric-Toothbrush-Adults/dp/B0C1H5CFSX?th=1",
+          "product_name_via_url": "Oral-B iO3 Ultimate Electric Toothbrush, 3 Smart Modes, Pressure Sensor,2 Year Warranty by Oral B, IPX7 Waterproof, Round Brush Head (Ice Blue)",
+          "ranked_offers": []
         },
         {
           "name": "Flipkart",
@@ -268,7 +342,80 @@
           "packaging_type_valid": true,
           "color_valid": true,
           "is_active": true,
-          "last_seen": "2025-09-04T19:28:23.718746"
+          "last_seen": "2025-09-04T19:28:23.718746",
+          "in_stock": true,
+          "platform_url": "https://www.flipkart.com/oral-b-io3-ultimate-adults-3-smart-modes-pressure-sensor-electric-toothbrush/p/itm9ba560cc1a8ee?pid=ETBHC8DAHGDSJ4BJ&lid=LSTETBHC8DAHGDSJ4BJYZ401I&marketplace=FLIPKART&cmpid=content_electric-toothbrush_8965229628_gmc",
+          "product_name_via_url": "Oral-B Io3 Ultimate For Adults, 3 Smart Modes, Pressure Sensor Electric Toothbrush  (Blue)",
+          "ranked_offers": [
+            {
+              "title": "Bank Offer",
+              "description": "Bank Offer 5% cashback on Flipkart Axis Bank Credit Card upto ₹4,000 per statement quarter T&C",
+              "amount": 4000.0,
+              "bank": "Axis Bank, CRED Bank",
+              "validity": null,
+              "min_spend": null,
+              "score": 100,
+              "is_instant": false,
+              "net_effective_price": 1599.0,
+              "is_applicable": true,
+              "note": "Flipkart bank offer: ₹4000.0 discount",
+              "offer_type": "Bank Offer",
+              "card_type": "Credit Card",
+              "card_provider": null,
+              "rank": 1
+            },
+            {
+              "title": "Bank Offer",
+              "description": "Bank Offer 5% cashback on Flipkart SBI Credit Card upto ₹4,000 per calendar quarter T&C",
+              "amount": 4000.0,
+              "bank": "SBI Bank, CRED Bank",
+              "validity": null,
+              "min_spend": null,
+              "score": 100,
+              "is_instant": false,
+              "net_effective_price": 1599.0,
+              "is_applicable": true,
+              "note": "Flipkart bank offer: ₹4000.0 discount",
+              "offer_type": "Bank Offer",
+              "card_type": "Credit Card",
+              "card_provider": null,
+              "rank": 2
+            },
+            {
+              "title": "Bank Offer",
+              "description": "Bank Offer 5% cashback on Axis Bank Flipkart Debit Card T&C",
+              "amount": 0.0,
+              "bank": "Axis Bank",
+              "validity": null,
+              "min_spend": null,
+              "score": 100,
+              "is_instant": false,
+              "net_effective_price": 5599.0,
+              "is_applicable": true,
+              "note": "Flipkart bank offer: ₹0.0 discount",
+              "offer_type": "Bank Offer",
+              "card_type": "Debit Card",
+              "card_provider": null,
+              "rank": 3
+            },
+            {
+              "title": "Bank Offer",
+              "description": "Bank Offer 10% off up to ₹1,200 on PNB Credit Card Transactions, on orders of ₹5,000 and above T&C",
+              "amount": 1200.0,
+              "bank": "PNB Bank, CRED Bank",
+              "validity": null,
+              "min_spend": null,
+              "score": 100,
+              "is_instant": false,
+              "net_effective_price": 4399.0,
+              "is_applicable": true,
+              "note": "Flipkart bank offer: ₹1200.0 discount",
+              "offer_type": "Bank Offer",
+              "card_type": "Credit Card",
+              "card_provider": null,
+              "rank": 4
+            }
+          ]
         },
         {
           "name": "Flipkart",
@@ -288,7 +435,10 @@
           "packaging_type_valid": true,
           "color_valid": true,
           "is_active": true,
-          "last_seen": "2025-09-04T19:28:23.718746"
+          "last_seen": "2025-09-04T19:28:23.718746",
+          "in_stock": null,
+          "platform_url": "http://www.flipkart.com/oral-b-io-3-electric-toothbrush/p/itmb443e5087eeab?pid=ETBGUGSR5W5ZZ7HZ&lid=LSTETBGUGSR5W5ZZ7HZM6IWUQ&marketplace=FLIPKART&cmpid=content_electric-toothbrush_8965229628_gmc",
+          "ranked_offers": []
         },
         {
           "name": "Flipkart",
@@ -308,7 +458,63 @@
           "packaging_type_valid": true,
           "color_valid": true,
           "is_active": true,
-          "last_seen": "2025-09-04T19:28:23.718746"
+          "last_seen": "2025-09-04T19:28:23.718746",
+          "in_stock": true,
+          "platform_url": "https://www.flipkart.com/oral-b-iog3-1b6-0-electric-toothbrush/p/itm14f0d9bf6257c?pid=ETBGUGV2RM2ZSCSS&lid=LSTETBGUGV2RM2ZSCSS6DSMCM&marketplace=FLIPKART&cmpid=content_electric-toothbrush_8965229628_gmc",
+          "product_name_via_url": "Oral-B iOG3.1B6.0 Electric Toothbrush  (Black)",
+          "ranked_offers": [
+            {
+              "title": "Bank Offer",
+              "description": "Bank Offer 5% cashback on Flipkart Axis Bank Credit Card upto ₹4,000 per statement quarter T&C",
+              "amount": 4000.0,
+              "bank": "Axis Bank, CRED Bank",
+              "validity": null,
+              "min_spend": null,
+              "score": 100,
+              "is_instant": false,
+              "net_effective_price": 8995.0,
+              "is_applicable": true,
+              "note": "Flipkart bank offer: ₹4000.0 discount",
+              "offer_type": "Bank Offer",
+              "card_type": "Credit Card",
+              "card_provider": null,
+              "rank": 1
+            },
+            {
+              "title": "Bank Offer",
+              "description": "Bank Offer 5% cashback on Flipkart SBI Credit Card upto ₹4,000 per calendar quarter T&C",
+              "amount": 4000.0,
+              "bank": "SBI Bank, CRED Bank",
+              "validity": null,
+              "min_spend": null,
+              "score": 100,
+              "is_instant": false,
+              "net_effective_price": 8995.0,
+              "is_applicable": true,
+              "note": "Flipkart bank offer: ₹4000.0 discount",
+              "offer_type": "Bank Offer",
+              "card_type": "Credit Card",
+              "card_provider": null,
+              "rank": 2
+            },
+            {
+              "title": "Bank Offer",
+              "description": "Bank Offer 5% cashback on Axis Bank Flipkart Debit Card T&C",
+              "amount": 0.0,
+              "bank": "Axis Bank",
+              "validity": null,
+              "min_spend": null,
+              "score": 100,
+              "is_instant": false,
+              "net_effective_price": 12995.0,
+              "is_applicable": true,
+              "note": "Flipkart bank offer: ₹0.0 discount",
+              "offer_type": "Bank Offer",
+              "card_type": "Debit Card",
+              "card_provider": null,
+              "rank": 3
+            }
+          ]
         },
         {
           "name": "Flipkart",
@@ -328,7 +534,63 @@
           "packaging_type_valid": true,
           "color_valid": true,
           "is_active": true,
-          "last_seen": "2025-09-04T19:28:23.718746"
+          "last_seen": "2025-09-04T19:28:23.718746",
+          "in_stock": true,
+          "platform_url": "https://www.flipkart.com/oral-b-io-g3-2q6-2kd-electric-toothbrush/p/itm0b12382472ebe?pid=ETBGUGSVSCUNFUYZ&lid=LSTETBGUGSVSCUNFUYZGK4YG2&marketplace=FLIPKART&cmpid=content_electric-toothbrush_8965229628_gmc",
+          "product_name_via_url": "Oral-B iO G3.2Q6.2KD Electric Toothbrush  (Black)",
+          "ranked_offers": [
+            {
+              "title": "Bank Offer",
+              "description": "Bank Offer 5% cashback on Flipkart Axis Bank Credit Card upto ₹4,000 per statement quarter T&C",
+              "amount": 4000.0,
+              "bank": "Axis Bank, CRED Bank",
+              "validity": null,
+              "min_spend": null,
+              "score": 100,
+              "is_instant": false,
+              "net_effective_price": 13827.0,
+              "is_applicable": true,
+              "note": "Flipkart bank offer: ₹4000.0 discount",
+              "offer_type": "Bank Offer",
+              "card_type": "Credit Card",
+              "card_provider": null,
+              "rank": 1
+            },
+            {
+              "title": "Bank Offer",
+              "description": "Bank Offer 5% cashback on Flipkart SBI Credit Card upto ₹4,000 per calendar quarter T&C",
+              "amount": 4000.0,
+              "bank": "SBI Bank, CRED Bank",
+              "validity": null,
+              "min_spend": null,
+              "score": 100,
+              "is_instant": false,
+              "net_effective_price": 13827.0,
+              "is_applicable": true,
+              "note": "Flipkart bank offer: ₹4000.0 discount",
+              "offer_type": "Bank Offer",
+              "card_type": "Credit Card",
+              "card_provider": null,
+              "rank": 2
+            },
+            {
+              "title": "Bank Offer",
+              "description": "Bank Offer 5% cashback on Axis Bank Flipkart Debit Card T&C",
+              "amount": 0.0,
+              "bank": "Axis Bank",
+              "validity": null,
+              "min_spend": null,
+              "score": 100,
+              "is_instant": false,
+              "net_effective_price": 17827.0,
+              "is_applicable": true,
+              "note": "Flipkart bank offer: ₹0.0 discount",
+              "offer_type": "Bank Offer",
+              "card_type": "Debit Card",
+              "card_provider": null,
+              "rank": 3
+            }
+          ]
         },
         {
           "name": "amazon.in",
@@ -348,7 +610,11 @@
           "packaging_type_valid": true,
           "color_valid": true,
           "is_active": true,
-          "last_seen": "2025-09-04T19:28:23.718746"
+          "last_seen": "2025-09-04T19:28:23.718746",
+          "in_stock": true,
+          "platform_url": "https://www.amazon.in/Oral-B-Electric-Toothbrush-Ultimate-Charger/dp/B0BP5XSH7T",
+          "product_name_via_url": "Oral-B iO3 Electric Toothbrush (1) with (1) Ultimate Clean Brush Head and (1) Charger",
+          "ranked_offers": []
         },
         {
           "name": "iBhejo.com",
@@ -368,7 +634,25 @@
           "packaging_type_valid": true,
           "color_valid": true,
           "is_active": true,
-          "last_seen": "2025-09-04T19:28:23.718746"
+          "last_seen": "2025-09-04T19:28:23.718746",
+          "ranked_offers":[            
+            {
+            "title": "Bank Offer",
+            "description": "Extra 5% Off with Sitewide Code BHEJO5",
+            "amount": 583.0,
+            "bank": "",
+            "validity": null,
+            "min_spend": null,
+            "score": 100,
+            "is_instant": true,
+            "net_effective_price": 11077.0,
+            "is_applicable": true,
+            "note": "Extra 5% Off with Sitewide Code BHEJO5",
+            "offer_type": "Bank Offer",
+            "card_type": "",
+            "card_provider": null,
+            "rank": 1
+          }]
         },
         {
           "name": "surplusdekho.com",
@@ -388,10 +672,26 @@
           "packaging_type_valid": true,
           "color_valid": true,
           "is_active": true,
-          "last_seen": "2025-09-04T19:28:23.718746"
+          "last_seen": "2025-09-04T19:28:23.718746",
+          "ranked_offers":[            
+            {
+            "title": "Bank Offer",
+            "description": "Get Extra 10% Off. Use Code - WELCOME10",
+            "amount": 279.9,
+            "bank": "",
+            "validity": null,
+            "min_spend": null,
+            "score": 100,
+            "is_instant": true,
+            "net_effective_price": 2519.0,
+            "is_applicable": true,
+            "note": "Get Extra 10% Off. Use Code - WELCOME10",
+            "offer_type": "Bank Offer",
+            "card_type": "",
+            "card_provider": null,
+            "rank": 1
+          }]
         },
-
-
         {
           "name": "Flipkart",
           "price": "₹13,713",
@@ -412,7 +712,63 @@
           "is_new": true,
           "needs_manual_verification": true,
           "is_active": true,
-          "last_seen": "2025-09-04T19:28:46.179804"
+          "last_seen": "2025-09-04T19:28:46.179804",
+          "in_stock": true,
+          "platform_url": "https://www.flipkart.com/oral-b-io-g3-1a6-0-electric-toothbrush/p/itm531a26cef6a73?pid=ETBGUGV4F7PHD5WU&lid=LSTETBGUGV4F7PHD5WUUD3V2A&marketplace=FLIPKART&cmpid=content_electric-toothbrush_8965229628_gmc",
+          "product_name_via_url": "Oral-B iO G3.1A6.0 Electric Toothbrush  (Black)",
+          "ranked_offers": [
+            {
+              "title": "Bank Offer",
+              "description": "Bank Offer 5% cashback on Flipkart Axis Bank Credit Card upto ₹4,000 per statement quarter T&C",
+              "amount": 4000.0,
+              "bank": "Axis Bank, CRED Bank",
+              "validity": null,
+              "min_spend": null,
+              "score": 100,
+              "is_instant": false,
+              "net_effective_price": 9713.0,
+              "is_applicable": true,
+              "note": "Flipkart bank offer: ₹4000.0 discount",
+              "offer_type": "Bank Offer",
+              "card_type": "Credit Card",
+              "card_provider": null,
+              "rank": 1
+            },
+            {
+              "title": "Bank Offer",
+              "description": "Bank Offer 5% cashback on Flipkart SBI Credit Card upto ₹4,000 per calendar quarter T&C",
+              "amount": 4000.0,
+              "bank": "SBI Bank, CRED Bank",
+              "validity": null,
+              "min_spend": null,
+              "score": 100,
+              "is_instant": false,
+              "net_effective_price": 9713.0,
+              "is_applicable": true,
+              "note": "Flipkart bank offer: ₹4000.0 discount",
+              "offer_type": "Bank Offer",
+              "card_type": "Credit Card",
+              "card_provider": null,
+              "rank": 2
+            },
+            {
+              "title": "Bank Offer",
+              "description": "Bank Offer 5% cashback on Axis Bank Flipkart Debit Card T&C",
+              "amount": 0.0,
+              "bank": "Axis Bank",
+              "validity": null,
+              "min_spend": null,
+              "score": 100,
+              "is_instant": false,
+              "net_effective_price": 13713.0,
+              "is_applicable": true,
+              "note": "Flipkart bank offer: ₹0.0 discount",
+              "offer_type": "Bank Offer",
+              "card_type": "Debit Card",
+              "card_provider": null,
+              "rank": 3
+            }
+          ]
         }
       ],
       "variant_stats": {
@@ -425,9 +781,7 @@
     {
       "packaging_type": "Toothbrush with 2 Brush Heads",
       "color": "White",
-      "store_links": [
-
-      ],
+      "store_links": [],
       "variant_stats": {
         "total_offers": 1,
         "verified_offers": 0,
@@ -488,6 +842,13 @@
       "offers_marked_inactive": 4,
       "total_active_offers": 30,
       "total_offers": 34
+    },
+    "mapping_timestamp": "2025-09-07T13:02:50.421914",
+    "mapping_stats": {
+      "flipkart_matches": 5,
+      "amazon_matches": 5,
+      "no_matches": 6,
+      "total_offers_processed": 16
     }
   }
 }
