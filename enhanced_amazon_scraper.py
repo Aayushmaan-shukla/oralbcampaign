@@ -1880,6 +1880,11 @@ def get_bank_offers(driver, url, max_retries=2):
                         logging.error(f"Error in fallback parsing for card {i+1}: {e}")
                         continue
             
+            # If no offers found from cards, try the "See All" button approach
+            if not all_offers:
+                logging.info("No offers found from cards, trying 'See All' button approach...")
+                all_offers = extract_bank_offers_from_see_all_button(driver, soup)
+            
             logging.info(f"Total offers extracted: {len(all_offers)}")
             return all_offers if all_offers else []
             
@@ -1893,6 +1898,206 @@ def get_bank_offers(driver, url, max_retries=2):
                 return [{"error": str(e)}]
     
     return []
+
+def extract_bank_offers_from_see_all_button(driver, soup):
+    """
+    Extract bank offers by clicking the 'See All' button and parsing the modal content.
+    This is a fallback method when card-based extraction doesn't find offers.
+    """
+    try:
+        from selenium.webdriver.common.by import By
+        from selenium.webdriver.support.ui import WebDriverWait
+        from selenium.webdriver.support import expected_conditions as EC
+        from selenium.common.exceptions import TimeoutException, ElementClickInterceptedException
+        
+        all_offers = []
+        
+        # Look for the "See All" button for bank offers
+        # Based on our HTML analysis, the button has class "sopp-promotion-action-button" and text "See All"
+        # and is associated with bank offers modal
+        try:
+            # Find the bank offer "See All" button
+            see_all_buttons = driver.find_elements(By.XPATH, "//span[@class='sopp-promotion-action-button' and contains(text(), 'See All')]")
+            
+            bank_offer_button = None
+            for button in see_all_buttons:
+                # Check if this button is related to bank offers by looking at the modal ID or parent context
+                try:
+                    modal_id = button.get_attribute("data-promotionmodalid")
+                    if modal_id and "ibd" in modal_id:  # ibd = instant bank discount
+                        bank_offer_button = button
+                        logging.info(f"Found bank offer 'See All' button with modal ID: {modal_id}")
+                        break
+                except:
+                    continue
+            
+            if not bank_offer_button:
+                # Alternative approach: look for button in bank offer context
+                bank_offer_sections = soup.find_all("span", class_="sopp-offer-title", string=lambda text: text and "Bank Offer" in text)
+                for section in bank_offer_sections:
+                    # Find the "See All" button in the same context
+                    parent_context = section.find_parent()
+                    if parent_context:
+                        see_all_span = parent_context.find("span", class_="sopp-promotion-action-button", string="See All")
+                        if see_all_span:
+                            # Try to find this button using Selenium
+                            modal_id = see_all_span.get("data-promotionmodalid")
+                            if modal_id:
+                                try:
+                                    bank_offer_button = driver.find_element(By.CSS_SELECTOR, f"[data-promotionmodalid='{modal_id}']")
+                                    logging.info(f"Found bank offer 'See All' button via modal ID: {modal_id}")
+                                    break
+                                except:
+                                    continue
+            
+            if bank_offer_button:
+                logging.info("Clicking on bank offer 'See All' button...")
+                
+                # Scroll to the button to make sure it's visible
+                driver.execute_script("arguments[0].scrollIntoView(true);", bank_offer_button)
+                time.sleep(1)
+                
+                # Click the button
+                driver.execute_script("arguments[0].click();", bank_offer_button)
+                logging.info("Clicked bank offer 'See All' button")
+                
+                # Wait for the modal to load
+                time.sleep(3)
+                
+                # Wait for modal content to be present
+                try:
+                    wait = WebDriverWait(driver, 10)
+                    # Look for modal content - the modal should have bank offer details
+                    modal_content = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "[data-a-modal-name='bank-offer-popover'], .a-modal-content, .a-popover-content")))
+                    logging.info("Modal content loaded successfully")
+                    
+                    # Get the modal content HTML
+                    modal_html = modal_content.get_attribute("outerHTML")
+                    modal_soup = BeautifulSoup(modal_html, 'html.parser')
+                    
+                    # Parse bank offers from modal content
+                    # Look for individual bank offer items
+                    bank_offer_items = modal_soup.find_all("div", class_=lambda x: x and ("offer" in x.lower() or "bank" in x.lower()))
+                    
+                    if not bank_offer_items:
+                        # Try alternative selectors for bank offers
+                        bank_offer_items = modal_soup.find_all("div", class_="a-section")
+                        bank_offer_items = [item for item in bank_offer_items if any(keyword in item.get_text().lower() for keyword in ["bank", "credit card", "debit card", "emi", "discount"])]
+                    
+                    logging.info(f"Found {len(bank_offer_items)} potential bank offer items in modal")
+                    
+                    for i, item in enumerate(bank_offer_items):
+                        try:
+                            # Extract offer details
+                            offer_title = None
+                            offer_description = None
+                            
+                            # Try to find title
+                            title_elem = item.find(["h1", "h2", "h3", "h4", "h5", "h6", "span", "div"], class_=lambda x: x and ("title" in x.lower() or "header" in x.lower()))
+                            if not title_elem:
+                                title_elem = item.find(["span", "div"], string=lambda text: text and any(keyword in text.lower() for keyword in ["bank", "credit", "debit", "emi", "discount", "offer"]))
+                            
+                            if title_elem:
+                                offer_title = title_elem.get_text(strip=True)
+                            
+                            # Try to find description
+                            desc_elem = item.find(["p", "span", "div"], class_=lambda x: x and ("desc" in x.lower() or "detail" in x.lower() or "text" in x.lower()))
+                            if not desc_elem:
+                                # Get all text content and use it as description
+                                all_text = item.get_text(strip=True)
+                                if all_text and len(all_text) > 20:
+                                    offer_description = all_text
+                                    if not offer_title:
+                                        # Extract first line as title
+                                        lines = all_text.split('\n')
+                                        offer_title = lines[0] if lines else "Bank Offer"
+                                        offer_description = '\n'.join(lines[1:]) if len(lines) > 1 else all_text
+                            
+                            if offer_title or offer_description:
+                                offer_data = {
+                                    "card_type": "Bank Offer",
+                                    "offer_title": offer_title or f"Bank Offer {i+1}",
+                                    "offer_description": offer_description or "No description available"
+                                }
+                                all_offers.append(offer_data)
+                                logging.info(f"Extracted bank offer from modal: {offer_data}")
+                        
+                        except Exception as e:
+                            logging.error(f"Error parsing bank offer item {i+1}: {e}")
+                            continue
+                    
+                    # If no structured offers found, try to extract from general modal text
+                    if not all_offers:
+                        modal_text = modal_soup.get_text(strip=True)
+                        if modal_text and len(modal_text) > 50:
+                            # Split by common separators and create offers
+                            lines = [line.strip() for line in modal_text.split('\n') if line.strip()]
+                            current_offer = {"title": "", "description": ""}
+                            
+                            for line in lines:
+                                if any(keyword in line.lower() for keyword in ["bank", "credit", "debit", "emi", "discount"]):
+                                    if current_offer["title"] and current_offer["description"]:
+                                        all_offers.append({
+                                            "card_type": "Bank Offer",
+                                            "offer_title": current_offer["title"],
+                                            "offer_description": current_offer["description"]
+                                        })
+                                        current_offer = {"title": "", "description": ""}
+                                    
+                                    if len(line) < 100:  # Likely a title
+                                        current_offer["title"] = line
+                                    else:  # Likely a description
+                                        current_offer["description"] = line
+                            
+                            # Add the last offer if exists
+                            if current_offer["title"] and current_offer["description"]:
+                                all_offers.append({
+                                    "card_type": "Bank Offer",
+                                    "offer_title": current_offer["title"],
+                                    "offer_description": current_offer["description"]
+                                })
+                    
+                    # Close the modal
+                    try:
+                        close_buttons = driver.find_elements(By.CSS_SELECTOR, "[data-action='a-popover-close'], .a-button-close, .a-offscreen, [aria-label='Close']")
+                        for close_btn in close_buttons:
+                            if close_btn.is_displayed():
+                                driver.execute_script("arguments[0].click();", close_btn)
+                                break
+                    except:
+                        # Try pressing Escape
+                        from selenium.webdriver.common.keys import Keys
+                        driver.find_element(By.TAG_NAME, "body").send_keys(Keys.ESCAPE)
+                    
+                    logging.info(f"Extracted {len(all_offers)} bank offers from modal")
+                    
+                except TimeoutException:
+                    logging.warning("Modal did not load within timeout, trying alternative approach")
+                    # Try to extract from the current page source after clicking
+                    updated_soup = BeautifulSoup(driver.page_source, 'html.parser')
+                    # Look for any new content that might have appeared
+                    bank_offer_elements = updated_soup.find_all(string=lambda text: text and "bank" in text.lower() and "offer" in text.lower())
+                    for element in bank_offer_elements:
+                        parent = element.parent
+                        if parent:
+                            offer_data = {
+                                "card_type": "Bank Offer",
+                                "offer_title": "Bank Offer",
+                                "offer_description": parent.get_text(strip=True)
+                            }
+                            all_offers.append(offer_data)
+            
+            else:
+                logging.warning("Could not find bank offer 'See All' button")
+                
+        except Exception as e:
+            logging.error(f"Error in extract_bank_offers_from_see_all_button: {e}")
+        
+        return all_offers
+        
+    except Exception as e:
+        logging.error(f"Exception in extract_bank_offers_from_see_all_button: {e}")
+        return []
 
 def extract_price_amount(price_str):
     """Extract numeric amount from price string like '₹30,999'"""
